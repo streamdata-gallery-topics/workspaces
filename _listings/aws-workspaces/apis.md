@@ -17,9 +17,9 @@ tags:
 - Stack Network
 - Desktops
 - Amazon Web Services
-created: "2018-03-13"
-modified: "2018-03-13"
-url: https://raw.githubusercontent.com/streamdata-gallery/workspaces/master/_listings/aws-workspaces/apis.yaml
+created: "2018-03-22"
+modified: "2018-03-22"
+url: https://raw.githubusercontent.com/streamdata-gallery-topics/workspaces/master/_listings/aws-workspaces/apis.yaml
 specificationVersion: "0.14"
 apis:
 - name: AWS WorkSpaces Service API
@@ -31,7 +31,7 @@ apis:
   tags: WorkSpaces
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery/workspaces/master/_listings/aws-workspaces/action-terminateworkspaces-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/workspaces/master/_listings/aws-workspaces/action-describeworkspaces-get.md
 x-common:
 - type: x-documentation
   url: http://docs.aws.amazon.com/workspaces/latest/api/api-reference.html
