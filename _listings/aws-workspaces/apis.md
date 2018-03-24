@@ -31,7 +31,7 @@ apis:
   tags: WorkSpaces
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/workspaces/master/_listings/aws-workspaces/action-startworkspaces-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/workspaces/master/_listings/aws-workspaces/action-stopworkspaces-get.md
 x-common:
 - type: x-documentation
   url: http://docs.aws.amazon.com/workspaces/latest/api/api-reference.html
