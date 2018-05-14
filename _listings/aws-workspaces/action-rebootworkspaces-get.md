@@ -1,8 +1,9 @@
 ---
 swagger: "2.0"
 info:
-  title: AWS WorkSpaces Service API
+  title: AWS WorkSpaces Service API Reboot Workspaces
   version: 1.0.0
+  description: Reboots the specified WorkSpaces.
 schemes:
 - http
 produces:
