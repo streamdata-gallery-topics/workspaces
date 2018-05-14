@@ -32,16 +32,15 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/workspaces/master/_listings/aws-workspaces/action-terminateworkspaces-get.md
-- name: AWS WorkSpaces Service API Modify Workspace Properties
-  description: Modifies the WorkSpace properties, including the running mode and AutoStop
-    time.
+- name: AWS WorkSpaces Service API Reboot Workspaces
+  description: Reboots the specified WorkSpaces.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Enterprise-Applications_AmazonWorkSpaces.png
   humanURL: https://aws.amazon.com/workspaces/
   baseURL: http:://{host}//
   tags: WorkSpaces
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/workspaces/master/_listings/aws-workspaces/action-modifyworkspaceproperties-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/workspaces/master/_listings/aws-workspaces/action-rebootworkspaces-get.md
 x-common:
 - type: x-documentation
   url: http://docs.aws.amazon.com/workspaces/latest/api/api-reference.html
