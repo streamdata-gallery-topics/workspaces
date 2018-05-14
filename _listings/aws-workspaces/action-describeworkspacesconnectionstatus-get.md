@@ -1,8 +1,9 @@
 ---
 swagger: "2.0"
 info:
-  title: AWS WorkSpaces Service API
+  title: AWS WorkSpaces Service API Describe Workspaces Connection Status
   version: 1.0.0
+  description: Describes the connection status of a specified WorkSpace.
 schemes:
 - http
 produces:
