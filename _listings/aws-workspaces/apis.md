@@ -32,15 +32,15 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/workspaces/master/_listings/aws-workspaces/action-terminateworkspaces-get.md
-- name: AWS WorkSpaces Service API Stop Workspaces
-  description: Stops the specified WorkSpaces.
+- name: AWS WorkSpaces Service API Terminate Workspaces
+  description: Terminates the specified WorkSpaces.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Enterprise-Applications_AmazonWorkSpaces.png
   humanURL: https://aws.amazon.com/workspaces/
   baseURL: http:://{host}//
   tags: WorkSpaces
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/workspaces/master/_listings/aws-workspaces/action-stopworkspaces-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/workspaces/master/_listings/aws-workspaces/action-terminateworkspaces-get.md
 x-common:
 - type: x-documentation
   url: http://docs.aws.amazon.com/workspaces/latest/api/api-reference.html
