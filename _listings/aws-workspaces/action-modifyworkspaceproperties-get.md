@@ -1,8 +1,10 @@
 ---
 swagger: "2.0"
 info:
-  title: AWS WorkSpaces Service API
+  title: AWS WorkSpaces Service API Modify Workspace Properties
   version: 1.0.0
+  description: Modifies the WorkSpace properties, including the running mode and AutoStop
+    time.
 schemes:
 - http
 produces:
