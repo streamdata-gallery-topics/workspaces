@@ -1,4 +1,3 @@
----
 swagger: "2.0"
 x-collection-name: AWS WorkSpaces
 x-complete: 1
@@ -171,4 +170,68 @@ paths:
           description: OK
       tags:
       - Workspaces
----
+  /?Action=CreateWorkspaces:
+    get:
+      summary: Create Workspaces
+      description: Creates one or more WorkSpaces.
+      operationId: createWorkspaces
+      x-api-path-slug: actioncreateworkspaces-get
+      parameters:
+      - in: query
+        name: Workspaces
+        description: An array of structures that specify the WorkSpaces to create
+        type: string
+      responses:
+        200:
+          description: OK
+      tags:
+      - ""
+  /?Action=DescribeWorkspaceDirectories:
+    get:
+      summary: Describe Workspace Directories
+      description: Retrieves information about the AWS Directory Service directories
+        in the region that are registered with Amazon WorkSpaces and are available
+        to your account.
+      operationId: describeWorkspaceDirectories
+      x-api-path-slug: actiondescribeworkspacedirectories-get
+      parameters:
+      - in: query
+        name: DirectoryIds
+        description: An array of strings that contains the directory identifiers to
+          retrieve information for
+        type: string
+      - in: query
+        name: NextToken
+        description: The NextToken value from a previous call to this operation
+        type: string
+      responses:
+        200:
+          description: OK
+      tags:
+      - Workspace Directories
+  /?Action=DescribeWorkspaceBundles:
+    get:
+      summary: Describe Workspace Bundles
+      description: Obtains information about the WorkSpace bundles that are available
+        to your account in the specified region.
+      operationId: describeWorkspaceBundles
+      x-api-path-slug: actiondescribeworkspacebundles-get
+      parameters:
+      - in: query
+        name: BundleIds
+        description: An array of strings that contains the identifiers of the bundles
+          to retrieve
+        type: string
+      - in: query
+        name: NextToken
+        description: The NextToken value from a previous call to this operation
+        type: string
+      - in: query
+        name: Owner
+        description: The owner of the bundles to retrieve
+        type: string
+      responses:
+        200:
+          description: OK
+      tags:
+      - Workspace Bundles

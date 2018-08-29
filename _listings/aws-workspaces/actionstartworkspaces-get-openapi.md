@@ -140,6 +140,103 @@ paths:
           description: OK
       tags:
       - Workspaces
+  /?Action=StopWorkspaces:
+    get:
+      summary: Stop Workspaces
+      description: Stops the specified WorkSpaces.
+      operationId: stopWorkspaces
+      x-api-path-slug: actionstopworkspaces-get
+      parameters:
+      - in: query
+        name: StopWorkspaceRequests
+        description: The requests
+        type: string
+      responses:
+        200:
+          description: OK
+      tags:
+      - Workspaces
+  /?Action=TerminateWorkspaces:
+    get:
+      summary: Terminate Workspaces
+      description: Terminates the specified WorkSpaces.
+      operationId: terminateWorkspaces
+      x-api-path-slug: actionterminateworkspaces-get
+      parameters:
+      - in: query
+        name: TerminateWorkspaceRequests
+        description: An array of structures that specify the WorkSpaces to terminate
+        type: string
+      responses:
+        200:
+          description: OK
+      tags:
+      - Workspaces
+  /?Action=CreateWorkspaces:
+    get:
+      summary: Create Workspaces
+      description: Creates one or more WorkSpaces.
+      operationId: createWorkspaces
+      x-api-path-slug: actioncreateworkspaces-get
+      parameters:
+      - in: query
+        name: Workspaces
+        description: An array of structures that specify the WorkSpaces to create
+        type: string
+      responses:
+        200:
+          description: OK
+      tags:
+      - ""
+  /?Action=DescribeWorkspaceDirectories:
+    get:
+      summary: Describe Workspace Directories
+      description: Retrieves information about the AWS Directory Service directories
+        in the region that are registered with Amazon WorkSpaces and are available
+        to your account.
+      operationId: describeWorkspaceDirectories
+      x-api-path-slug: actiondescribeworkspacedirectories-get
+      parameters:
+      - in: query
+        name: DirectoryIds
+        description: An array of strings that contains the directory identifiers to
+          retrieve information for
+        type: string
+      - in: query
+        name: NextToken
+        description: The NextToken value from a previous call to this operation
+        type: string
+      responses:
+        200:
+          description: OK
+      tags:
+      - Workspace Directories
+  /?Action=DescribeWorkspaceBundles:
+    get:
+      summary: Describe Workspace Bundles
+      description: Obtains information about the WorkSpace bundles that are available
+        to your account in the specified region.
+      operationId: describeWorkspaceBundles
+      x-api-path-slug: actiondescribeworkspacebundles-get
+      parameters:
+      - in: query
+        name: BundleIds
+        description: An array of strings that contains the identifiers of the bundles
+          to retrieve
+        type: string
+      - in: query
+        name: NextToken
+        description: The NextToken value from a previous call to this operation
+        type: string
+      - in: query
+        name: Owner
+        description: The owner of the bundles to retrieve
+        type: string
+      responses:
+        200:
+          description: OK
+      tags:
+      - Workspace Bundles
 x-streamrank:
   polling_total_time_average: 0
   polling_size_download_average: 0
